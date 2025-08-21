@@ -1,0 +1,272 @@
+My Prompts
+Prompt 1:
+I’m creating a landing page for my graphic design business. Can you suggest 3 service packages with descriptions and pricing? Please make them sound professional and appealing to clients.
+
+Prompt 2:
+Write the HTML code for a 'Services' section of a landing page for a graphic designer. Include 3 service offerings with their names, descriptions, and prices. Style them as cards inside a section with an <h2> title.
+
+Prompt 3:
+Generate CSS styles for a services section on a portfolio landing page. Each service should be in a card with padding, rounded corners, hover animation, and use these brand colors: dark red (#E51010), lime green (#C3FF83), black, and white.
+
+AI Responses
+Got it 👍 Let’s build this **step by step** so you can do everything **directly on GitHub’s web platform** (without creating local files). I’ll show you exactly how to set up your repo, publish with GitHub Pages, and structure your landing page.
+
+---
+
+## 🔹 Step 1: Create Your Repository
+
+1. Go to [GitHub](https://github.com) and log in.
+2. Click the **+** icon (top right) → **New repository**.
+3. Name it something like `social-media-landing-page`.
+4. Set it to **Public** (GitHub Pages requires public repo unless you have Pro).
+5. Click **Create repository**.
+
+---
+
+## 🔹 Step 2: Add Your Files (Directly in GitHub)
+
+1. Inside your new repo, click **Add file → Create new file**.
+2. Name it `index.html`.
+3. Paste the following code into it (I’ll mark AI-assisted sections in comments as required by your assignment).
+
+---
+
+### 📄 `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ty Phillip | Graphic Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1 class="logo">Ty Phillip</h1>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h2>You think it, I make it.</h2>
+    <a href="#services" class="cta-btn">View Services</a>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+      <h3>Logo & Brand Identity Package</h3>
+      <p>What’s included: Custom logo design, color palette, and typography guide to define your brand’s unique look.
+💰 $500 – one-time</p>
+    </div>
+    <div class="service-card">
+      <h3>Social Media Graphics Bundle</h3>
+      <p>What’s included: 15 branded templates (for Instagram, TikTok, LinkedIn, or Facebook) optimized for engagement and consistency.
+💰 $350 – per bundle</p>
+    </div>
+    <div class="service-card">
+      <h3>Marketing Collateral Design</h3>
+      <p>What’s included: Professionally designed flyers, brochures, or business cards tailored to your campaign or product launch.
+💰 Starting at $250 per project</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Let’s get in touch</h2>
+    <p>Tell me a little bit about your project below, or email me directly at 
+      <a href="mailto:tykmwphillip@gmail.com">tykmwphillip@gmail.com</a>.</p>
+    
+    <!-- AI-Assisted Code: Contact Form -->
+    <!-- This form structure was generated with AI assistance -->
+    <form class="contact-form" action="https://formspree.io/f/mrblwjnk" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service">
+        <option>Logo & Brand Identity Package</option>
+        <option>Social Media Graphics Bundle</option>
+        <option>Marketing Collateral Design</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <p class="form-msg">Thank you for your interest! Please allow 1-3 business days for an answer.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Ty Phillip | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+### 📄 `style.css`
+
+Now create another file: **Add file → Create new file → `style.css`**.
+Paste this code:
+
+```css
+/* Global Styles (AI-assisted styling for colors & layout) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+a { color: #C3FF83; text-decoration: none; }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E51010;
+  padding: 1rem 2rem;
+}
+.navbar .logo { color: #fff; }
+.nav-links { list-style: none; display: flex; gap: 1rem; }
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #E51010, #000);
+}
+.cta-btn {
+  background: #C3FF83;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.cta-btn:hover { transform: scale(1.1); }
+
+/* Services */
+.services {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.service-card {
+  background: #111;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  border: 2px solid #E51010;
+}
+
+/* Contact */
+.contact { padding: 3rem 2rem; text-align: center; }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.7rem;
+  border: 1px solid #C3FF83;
+  border-radius: 5px;
+}
+.submit-btn {
+  background: #E51010;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.submit-btn:hover { background: #C3FF83; color: #000; }
+
+/* Footer */
+.footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+```
+
+---
+
+## 🔹 Step 3: Enable GitHub Pages
+
+1. In your repo → click **Settings** → **Pages**.
+2. Under “Branch,” select **main** and **/root**.
+3. Save → GitHub will give you a **public URL** (your live site 🎉).
+
+---
+
+## 🔹 Step 4: Add Reflection Page
+
+1. Create another file → name it `reflection.md`.
+2. Paste:
+
+
+
+---
+
+✅ That’s it — now you’ll have:
+
+* A professional **landing page** with your brand.
+* **AI-assisted HTML & CSS sections** clearly documented.
+* A **working contact form** (via [Formspree](https://formspree.io) → replace `yourFormID` with a free Formspree form ID).
+* A **reflection page** for your final project.
+
+---
+
+Want me to also **make your contact form functional right now** (with Formspree setup instructions) so it fully works out of the box?
+
+Absolutely 👍 Here are **3 clear service packages for a graphic designer** with descriptions and pricing that you could add to your landing page:
+
+---
+
+### 🎨 1. Logo & Brand Identity Package
+
+**What’s included:** Custom logo design, color palette, and typography guide to define your brand’s unique look.
+💰 **\$500 – one-time**
+
+---
+
+### 🖼️ 2. Social Media Graphics Bundle
+
+**What’s included:** 15 branded templates (for Instagram, TikTok, LinkedIn, or Facebook) optimized for engagement and consistency.
+💰 **\$350 – per bundle**
+
+---
+
+### 📄 3. Marketing Collateral Design
+
+**What’s included:** Professionally designed flyers, brochures, or business cards tailored to your campaign or product launch.
+💰 **Starting at \$250 per project**
+
+---
+
+Do you want me to **format these directly in HTML** (so you can copy-paste into your `index.html` services section), keeping the same style as your social media landing page?
+
