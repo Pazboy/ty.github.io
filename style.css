@@ -13,7 +13,7 @@ a { color: #C3FF83; text-decoration: none; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #5910E5;
+  background: #E51010;
   padding: 1rem 2rem;
 }
 .navbar .logo { color: #fff; }
@@ -23,7 +23,7 @@ a { color: #C3FF83; text-decoration: none; }
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #5910E5, #000);
+  background: linear-gradient(135deg, #E51010, #000);
 }
 .cta-btn {
   background: #C3FF83;
@@ -45,7 +45,7 @@ a { color: #C3FF83; text-decoration: none; }
   padding: 1.5rem;
   border-radius: 10px;
   max-width: 500px;
-  border: 2px solid #5910E5;
+  border: 2px solid #E51010;
 }
 
 /* Contact */
@@ -65,7 +65,7 @@ a { color: #C3FF83; text-decoration: none; }
   border-radius: 5px;
 }
 .submit-btn {
-  background: #5910E5;
+  background: #E51010;
   color: #fff;
   padding: 0.8rem;
   border: none;
